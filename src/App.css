@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.shipping {
+  background-color: #E3E3E3;
+  width: 1440px;
+  height: 41px;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* .center {
+  /* border: 5px solid; */
+  /* position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 10px;
+} */ 
