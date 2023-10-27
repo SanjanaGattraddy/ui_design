@@ -37,112 +37,170 @@
   }
 }
 
+.container {
+  margin: auto;
+}
+
 .shipping {
   background-color: #E3E3E3;
   width: 1440px;
   height: 41px;
   text-align: center;
-  /* margin: auto; */
   display: flex;
   justify-content: center;
   align-items: center;
   
 }
 
-/* .center {
-  /* border: 5px solid; */
-  /* position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  padding: 10px;
-} */ 
-
-.image-container1 {
+.text1 {
+  color: white;
+  margin-top: 381px;
+  margin-left: 180px;
+  height: 123.08;
+  width: 360.14px;
+}
+.image-container {
   width: 1440px;
   height: 599px;
   display: flex; 
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
+  /* position: relative; */
+  /* justify-content: space-between; */
 }
-
-.image-container1 img {
-  width: 50%; 
-  height: 100%; 
-  object-fit: cover;
-  object-position: center bottom;
-}
-
-.image-container2 {
-  width: 1440px;
-  height: 599px;
-  display: flex; 
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
-}
-
-.image-container2 img {
-  width: 50%; 
-  height: 100%; 
-  object-fit: cover;
-  /* object-position: center top; */
-}
-
-.image-container2 .image1 {
-  object-position: center top; 
-}
-
-.image-container2 .image2 {
-  object-position: bottom; 
-}
-
-.image-container3 {
-  width: 1440px;
-  height: 599px;
-  display: flex; 
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
-}
-
-.image-container3 img {
-  width: 50%; 
-  height: 100%; 
-  
-}
-
-/* .image-container3 .image1 {
-  width: 100%;
+.trans{
   height: 100%;
-  overflow: hidden;
-  align-items: center ;
-  justify-content: center ;
-  object-fit: contain;
-  object-position: center ; 
-  transform: scale(1.5);
-} */
-
-.image-container3 .image2 {
-  object-fit: cover;
-  /* object-position: bottom;  */
-}
-
-.image-container4 {
-  display: flex;
-  align-items: center left;
-  justify-content: center left;
-  width: 1440px; /* Set the container width */
-  height: 599px; /* Set the container height */
-  overflow: hidden; /* Hide any image overflow */
-  object-position: centre bottom;
-}
-
-.image-container4 img {
-  
-  /* transform: scale(1.3); */
   width: 100%;
+  /* position: absolute; */
+  background-size: contain;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 1;
+  position: relative
+}
+
+.image1{
+  background-image: url("https://thecoolmom.co/wp-content/uploads/2023/02/pexels-energepiccom-110473-1-scaled.jpg");
+  background-size: cover;
   height: 100%;
-  object-fit: cover; 
+  width: 50%;
+}
+
+.image2 {
+  background-image: url("https://images.pexels.com/photos/261450/pexels-photo-261450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%;
+  width: 50%;
+}
+
+.text2 {
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.image3 {
+  background-image: url("https://images.pexels.com/photos/753695/pexels-photo-753695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: center top;
+  height: 100%;
+  width: 50%;
+}
+
+.text3 {
+  color: black;
+}
+
+.image4 {
+  background-image: url("https://images.pexels.com/photos/5240857/pexels-photo-5240857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+  width: 50%;
+
+}
+
+.image5 {
+  background-image: url("https://images.pexels.com/photos/4348078/pexels-photo-4348078.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: 2500px;
+
+  /* align-items: center; */
+  /* align-content: center; */
+  background-position: center ;
+  /* image-orientation: initial; */
+  height: 100%;
+  width: 50%;
   
+
+}
+
+.image6 {
+  background-image: url("https://images.unsplash.com/photo-1620298228682-e5eb972dfbe1?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+
+}
+
+.text6 {
+  color: white;
+}
+
+.image7 {
+  background-image: url("https://images.unsplash.com/photo-1633239894530-d715e7498078?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: 2000px;
+  background-position: center left;
+  height: 100%;
+  width: 100%;
+
+}
+
+div{
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box;      
+}
+.back1{
+  background-image: url("./cart.png");
+  height: 25px;
+  background-size: cover;
+  width: 25px;
+  /* background-color: black; */
+
+
+}
+
+.back {
+  background-image: url("./ss.png");
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  /* background-color: black; */
+
+}
+.about{
+  background-image: url("./about.png");
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  
+}
+
+.new1{
+  background-image: url("./testimonials/1.png");
+  background-size: cover;
+
+}
+.new2{
+  background-image: url("./testimonials/2.png");
+  background-size: cover;
+
+}
+.new3{
+  background-image: url("./testimonials/3.png");
+  background-size: cover;
+
+}
+.new4{
+  background-image: url("./testimonials/4.png");
+  background-size: cover;
+
 }
