@@ -53,7 +53,7 @@ function App() {
       </div>
 
       <div class="image-container container">
-        <div className="image1" >
+        <div className="image1 container" >
 
           <p className='text1'>
             MADE FOR YOU
@@ -62,18 +62,26 @@ function App() {
         </div>
 
         <div className='image2 container'>
-          <p className='text2'>
-            YOU WERE MADE TO MAKE AN IMPACT
-          </p>
+          <div style={{ height: "176px", width: "370px", paddingTop: "388px", paddingLeft: "175px" }}>
+            <div className='text2'>
+              <p>
+                YOU WERE MADE TO MAKE AN IMPACT.
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
 
       <div class="image-container container">
-        <div className="image3" >
-          <p className='text3'>
-            MADE FOR THE BEST CHANGE MAKERS
-          </p>
+        <div className="image3 container" >
+          <div style={{ height: "176px", width: "370px", paddingTop: "388px", paddingLeft: "175px" }}>
+            <p className='text3'>
+              MADE FOR THE BEST CHANGE MAKERS
+            </p>
+          </div>
         </div>
+
 
         <div className='image4'>
         </div>
@@ -85,18 +93,24 @@ function App() {
         </div>
 
         <div className='image6'>
-          <p className='text'>
-            SAVOUR THE PRESENT
-          </p>
+          <div style={{ height: "176px", width: "370px", paddingTop: "388px", paddingLeft: "175px" }}>
+            <p className='text6'>
+              SAVOUR THE PRESENT
+            </p>
+          </div>
+
         </div>
       </div>
 
       <div class="image-container container">
         <div className='image7'>
           <div className='trans'>
-            <p className='text2'>
-              WHERE QUALITY MEETS CLASS
-            </p>
+            <div>
+              <p className='text7'>
+                WHERE QUALITY MEETS CLASS.
+              </p>
+            </div>
+
           </div>
 
         </div>
@@ -104,7 +118,7 @@ function App() {
 
 
 
-      <div className="container" style={{ display: "flex", padding: "100px", width: "1240px" }}>
+      <div className="container" style={{ display: "flex", padding: "100px", width: "1440px" }}>
         <div className="about" style={{ height: "436px", width: "620px" }}>
 
         </div>
@@ -121,7 +135,7 @@ function App() {
 
         </div>
       </div>
-      <div className="container" style={{ backgroundColor: "yellow", width: "1240px", height: "552px", paddingTop: "25px", paddingLeft: "50px", paddingRight: "50px" }}>
+      <div className="container" style={{ backgroundColor: "yellow", width: "1440px", height: "552px", paddingTop: "25px", paddingLeft: "50px", paddingRight: "50px" }}>
         <div style={{ textAlign: "center" }}>
           <h1>TESTIMONIALS</h1>
         </div>
@@ -131,15 +145,18 @@ function App() {
           <div className="new3" style={{ height: "277px", width: "277px", borderRadius: "15px" }}></div>
           <div className="new4" style={{ height: "277px", width: "277px", borderRadius: "15px" }}></div>
           {/* <img src="./testimonials/1.png" alt="Testimonial 1" /> */}
-
-
         </div>
-
-
-
+      </div>
+      
+      <div className='footer container'>
+      <div style={{color: "white", position: "absolute", width: "151px", height: "62px", marginTop: "6px", marginLeft: "645px", fontSize: "30px"}}>
+        <p>PISTONS</p>
+      </div>
       </div>
       <br></br>
     </div>
+
+
 
 
 
