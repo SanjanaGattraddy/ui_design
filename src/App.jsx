@@ -1,32 +1,37 @@
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios'
+import React, { useEffect, useState } from 'react';
 
 function App() {
 
-  const data = [
-    {
+  const [hoveredElement, setHoveredElement] = useState(null);
 
-      dest: "./testimonials/1.png",
-      change: "abc"
+  const handleMouseEnter = (elementNumber) => {
+    setHoveredElement(elementNumber);
+  };
 
-    },
-    {
-      dest: "./testimonials/2.png",
-      change: "abc"
+  const handleMouseLeave = () => {
+    setHoveredElement(null);
+  };
 
-    },
-    {
-      dest: "./testimonials/3.png",
-      change: "abc"
+  const [data, setdata] = useState(null);
 
-    },
-    {
-      dest: "./testimonials/4.png",
-      change: "abc"
+  async function fetchData() {
+    const url = 'http://localhost:3001/api/test-api/testimonials.json';
+    // const url = 'http://elitefit4you.com/test-api/testimonials.json';
 
+    try {
+      const response = await axios.get(url);
+      setdata(response.data["testimonials"]);
+      console.log(data)
+    } catch (error) {
+      console.error('Error:', error);
     }
-  ]
-  const image = "./testimonials/1.png";
+  }
+  useEffect(() => {
+    fetchData()
+  }, [data])
 
 
   return (
@@ -135,23 +140,46 @@ function App() {
 
         </div>
       </div>
-      <div className="container" style={{ backgroundColor: "yellow", width: "1440px", height: "552px", paddingTop: "25px", paddingLeft: "50px", paddingRight: "50px" }}>
+      <div style={{ backgroundColor: "whitesmoke", width: "1440px", height: "552px", paddingTop: "25px", paddingLeft: "50px", paddingRight: "50px" }}>
         <div style={{ textAlign: "center" }}>
           <h1>TESTIMONIALS</h1>
         </div>
         <div style={{ marginTop: "100px", display: "flex", justifyContent: "space-evenly" }}>
-          <div className="new1" style={{ height: "277px", width: "277px", borderRadius: "15px" }}></div>
-          <div className="new2" style={{ height: "277px", width: "277px", borderRadius: "15px" }}></div>
-          <div className="new3" style={{ height: "277px", width: "277px", borderRadius: "15px" }}></div>
-          <div className="new4" style={{ height: "277px", width: "277px", borderRadius: "15px" }}></div>
-          {/* <img src="./testimonials/1.png" alt="Testimonial 1" /> */}
+
+          {hoveredElement === 1 ? (
+            <div className="new11" style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "5px", fontSize: "16px", color: "white", height: '277px', width: '277px', borderRadius: '15px' }} onMouseLeave={handleMouseLeave}>
+              <p style={{ width: "200px" }}>"{data[0]?.message}"</p>
+            </div>
+          ) : (
+            <div className="new1" style={{ height: '277px', width: '277px', borderRadius: '15px' }} onMouseEnter={() => handleMouseEnter(1)}></div>
+          )}
+          {hoveredElement === 2 ? (
+            <div className="new11" style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "5px", fontSize: "16px", color: "white", height: '277px', width: '277px', borderRadius: '15px' }} onMouseLeave={handleMouseLeave}>
+              <p style={{ width: "200px" }}>"{data[1]?.message}"</p>
+            </div>
+          ) : (
+            <div className="new2" style={{ height: '277px', width: '277px', borderRadius: '15px' }} onMouseEnter={() => handleMouseEnter(2)}></div>
+          )}
+          {hoveredElement === 3 ? (
+            <div className="new11" style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "5px", fontSize: "16px", color: "white", height: '277px', width: '277px', borderRadius: '15px' }} onMouseLeave={handleMouseLeave}>
+              <p style={{ width: "200px" }}>"{data[2]?.message}"</p>
+            </div>
+          ) : (
+            <div className="new3" style={{ height: '277px', width: '277px', borderRadius: '15px' }} onMouseEnter={() => handleMouseEnter(3)}></div>
+          )}
+          {hoveredElement === 4 ? (
+            <div className="new11" style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "5px", fontSize: "16px", color: "white", height: '277px', width: '277px', borderRadius: '15px' }} onMouseLeave={handleMouseLeave}>
+              <p style={{ width: "200px" }}>"{data[3]?.message}"</p>
+            </div>
+          ) : (
+            <div className="new4" style={{ height: '277px', width: '277px', borderRadius: '15px' }} onMouseEnter={() => handleMouseEnter(4)}></div>
+          )}
         </div>
       </div>
-      
       <div className='footer container'>
-      <div style={{color: "white", position: "absolute", width: "151px", height: "62px", marginTop: "6px", marginLeft: "645px", fontSize: "30px"}}>
-        <p>PISTONS</p>
-      </div>
+        <div style={{ color: "white", position: "absolute", width: "151px", height: "62px", marginTop: "6px", marginLeft: "645px", fontSize: "30px" }}>
+          <p>PISTONS</p>
+        </div>
       </div>
       <br></br>
     </div>
