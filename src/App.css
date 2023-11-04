@@ -1,51 +1,6 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.container {
-  margin: auto;
-  width: 1440px;
-}
-
 .shipping {
   background-color: #E3E3E3;
-  width: 1440px;
+  width: 100%;
   height: 41px;
   text-align: center;
   display: flex;
@@ -63,21 +18,14 @@
 }
 
 .image-container {
-  width: 1440px;
+  width: 100%;
   height: 599px;
   display: flex;
-  /* position: relative; */
-  /* justify-content: space-between; */
+
 }
 
 .trans {
-  /* height: 100%;
-  width: 100%;
-  background-size: contain;
-  background-color: black;
-  opacity: 0.4;
-  z-index: 1;
-  position: relative */
+
   content: "";
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -92,7 +40,6 @@
   background-image: url("https://thecoolmom.co/wp-content/uploads/2023/02/pexels-energepiccom-110473-1-scaled.jpg");
   background-size: cover;
   height: 100%;
-  width: 50%;
 }
 
 .image2 {
@@ -100,8 +47,6 @@
   background-size: cover;
   background-position: center bottom;
   height: 100%;
-  width: 50%;
-  /* padding-left: 720px; */
 }
 
 .text2 {
@@ -118,8 +63,6 @@
   background-image: url("https://images.pexels.com/photos/753695/pexels-photo-753695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   background-size: cover;
   background-position: center top;
-  height: 100%;
-  width: 50%;
 }
 
 .text3 {
@@ -136,9 +79,6 @@
   background-image: url("https://images.pexels.com/photos/5240857/pexels-photo-5240857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   background-size: cover;
   background-position: bottom;
-  height: 100%;
-  width: 50%;
-
 }
 
 .image5 {
@@ -201,28 +141,28 @@ div {
 
 .back1 {
   background-image: url("./cart.png");
-  height: 25px;
+  height: 2vw;
   background-size: cover;
-  width: 25px;
-  /* background-color: black; */
+  width: 2vw;
+
 
 
 }
 
 .back {
   background-image: url("./ss.png");
-  height: 25px;
-  width: 25px;
+  height: 2vw;
+  width: 2vw;
   background-size: cover;
-  /* background-color: black; */
+  background-color: transparent;
+  border: none;
 
 }
 
 .about {
   background-image: url("./about.png");
-  height: 25px;
-  width: 25px;
   background-size: cover;
+  background-position: center;
 
 }
 
@@ -252,10 +192,92 @@ div {
 
 .footer {
   background-color: black;
-  width: 1440px;
+  width: 100%;
   height: 254px;
 }
 
 .new11 {
   background-color: black;
+}
+
+.x1 {
+  justify-content: space-between;
+  display: flex;
+  height: 83px;
+  width: 100%;
+  padding: 9px;
+  align-items: center
+}
+
+.x2 {
+  font-size: 2.8vw;
+}
+
+.fonty {
+  font-weight: bold;
+}
+
+.centy {
+  display: flex;
+  align-items: center;
+  font-size: 1vw;
+
+}
+
+.align-icon {
+  float: right;
+  height: 100%;
+}
+
+
+
+.back2 {
+  background-image: url("./images/fb.png");
+
+  background-size: cover;
+
+
+}
+
+.back3 {
+  background-image: url("./images/yt.png");
+
+  background-size: cover;
+
+
+}
+
+.back4 {
+  background-image: url("./images/insta.png");
+
+  background-size: cover;
+
+}
+
+.back5 {
+  background-image: url("./images/twitter.png");
+
+  background-size: cover;
+
+
+}
+
+.back6 {
+  background-image: url("./images/mail.png");
+
+  background-size: cover;
+
+
+}
+
+.logo_size {
+  height: 33px;
+  width: 33px;
+}
+
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
